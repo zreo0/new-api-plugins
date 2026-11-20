@@ -1,0 +1,10 @@
+{
+    "name": "new-api-decisions-plugin",
+    "version": "1.0.0",
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "build": "bun build ./src/plugin.js --target browser --format esm --outdir ./dist",
+        "test": "node --test"
+    }
+}

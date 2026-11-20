@@ -1,0 +1,9 @@
+{
+    "name": "new-api-plugins",
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "release": "bun scripts/release.js",
+        "test": "bun test ./test"
+    }
+}

@@ -1,0 +1,92 @@
+{
+    "indexVersion": 1,
+    "name": "zreo0 New API Plugins",
+    "plugins": [
+        {
+            "key": "zreo0_decisions",
+            "name": "Decisions",
+            "author": {
+                "login": "zreo0",
+                "url": "https://github.com/zreo0"
+            },
+            "description": {
+                "en": "Typed decisions from multiple upstreams through one OpenAI-compatible endpoint",
+                "zh": "通过 OpenAI 兼容接口调用多个上游的决策模型"
+            },
+            "models": [
+                "baseten/elephant-1",
+                "baseten/joey-1",
+                "baseten/mammoth-1",
+                "convaiinnovations/laya",
+                "google/gemini-decision-1",
+                "heygen/heygen-decision-1",
+                "heygen/heygen-decision-1-turbo",
+                "liquid/d1",
+                "liquid/d1-ultra",
+                "liquid/d1.2",
+                "liquid/d1.2-ultra",
+                "microsoft/decision-1.1",
+                "microsoft/microsoft-decision-1",
+                "nace-ai/drex-max-finance",
+                "nace-ai/drex-max-v1.1",
+                "nace-ai/drex-v2.0",
+                "openai/gpt-6-luna-decisions",
+                "parallel/parallel-decisions-fast",
+                "perplexity/pplx-decider-flash-v1.2",
+                "perplexity/pplx-decider-flash-v1.3",
+                "perplexity/pplx-decider-v1.2",
+                "perplexity/pplx-decider-v1.3",
+                "scaledown/scaledown-classify-1",
+                "typesafe-ai/jev",
+                "typesafe-ai/jev-1.13.0",
+                "typesafe-ai/jev-1.14.0",
+                "gemini-decision-1",
+                "gpt-6-luna",
+                "jev-1.13.0",
+                "jev-1.14.0",
+                "jev-latest",
+                "jev-preview",
+                "microsoft-decision-1",
+                "microsoft-decision-1.1"
+            ],
+            "routes": [
+                {
+                    "method": "POST",
+                    "path": "/v1/decisions",
+                    "type": "submit",
+                    "decode": "decodeDecision",
+                    "render": "renderDecision",
+                    "retainResult": false
+                }
+            ],
+            "task": true,
+            "provider": false,
+            "transform": false,
+            "latest": "1.0.0",
+            "versions": [
+                {
+                    "version": "1.0.0",
+                    "path": "plugins/tasks/zreo0_decisions/1.0.0/plugin.js",
+                    "sha256": "1291f4c38e3379d5f522928ddeb64a44c84663ac10e95695f4421a845fb454b9",
+                    "minApiVersion": 1,
+                    "kind": "task",
+                    "auth": "api_key",
+                    "readme": {
+                        "path": "plugins/tasks/zreo0_decisions/1.0.0/README.md",
+                        "sha256": "f4f88d34a14ae279e64d258639a42e9272680c56d8273044b50c332c243cc7a4",
+                        "translations": {
+                            "zh-CN": {
+                                "path": "plugins/tasks/zreo0_decisions/1.0.0/README.zh-CN.md",
+                                "sha256": "320499ac0981787314ac9dab4e74d23a5861ba76dff0b7d4664e4781f1e5173f"
+                            }
+                        }
+                    },
+                    "changelog": {
+                        "path": "plugins/tasks/zreo0_decisions/1.0.0/CHANGELOG.md",
+                        "sha256": "fef3685ff1dffba39295ce598a028013687e7a6dfd197b03d89ae0b9c0cab010"
+                    }
+                }
+            ]
+        }
+    ]
+}

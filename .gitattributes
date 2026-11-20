@@ -1,0 +1,3 @@
+# Marketplace hashes cover the exact bytes of published asset files
+plugins/tasks/*/[0-9]*/plugin.js -text
+plugins/tasks/*/[0-9]*/*.md -text
